@@ -10,37 +10,56 @@ public class Move : MonoBehaviour
     public float speed = 2f;
     public Animator anim;
     public SpriteRenderer sr;
-    public float jumpForce = 7f;
+    public float jumpForce = 15f;
     public bool is_ground = true;
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
     }
-    void OnTriggerStay2D(Collider2D col)
-    {
-        if (col.tag == "ground") is_ground = true;
-    }
-    void OnTriggerExit2D(Collider2D col)
-    {
-        if (col.tag == "ground") is_ground = false;
-    }
-
 
     void Update()
     {
         Wolk();
         FlipSprite();
-        Jump();
+        if(Input.GetButtonDown("Jump")){
+            Jump();
+        }
     }
 
+    // void FixedUpdate()
+    // {
+    //     if(Input.GetButtonDown("Jump")){
+    //         Jump();
+    //     }
+    // }
     void Wolk()
     {
         moveVector.x = Input.GetAxis("Horizontal");
         anim.SetFloat("moveX", Mathf.Abs(moveVector.x));
-        rb.velocity = new Vector2 (moveVector.x * speed, moveVector.y);
+        //rb.velocity = new Vector2 (moveVector.x * speed, moveVector.y);
+        rb.velocity = new Vector2 (moveVector.x * speed, rb.velocity.y);
     }
+
+    void Jump()
+        {
+            // if (Input.GetKeyDown(KeyCode.Space) && is_ground)
+            // {
+            //     print("jump");
+            //     //anim.SetFloat("jumpY", Mathf.Abs(moveVector.y));
+            //     //rb.AddForce(new Vector2(0, jumpForce * 10));
+            //     rb.AddForce(transform.up * jumpForce, )
+            //     //rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            //     //rb.AddForce(Vector2.up * jumpForce);
+            //     //rb.AddForce(new Vector2(0, 10), ForceMode2D.Impulse);
+            // }
+            //rb.AddForce(new Vector2(0, jumpForce * 10));
+            
+            rb.AddForce(Vector2.up * jumpForce * rb.gravityScale);
+            print("jump");
+        }
     void FlipSprite()
     {
         if(moveVector.x < 0)
@@ -52,18 +71,13 @@ public class Move : MonoBehaviour
             sr.flipX = false;
         }
     }
-
-    void Jump()
+    void OnTriggerStay2D(Collider2D col)
     {
-        if (Input.GetKeyDown(KeyCode.Space) && is_ground)
-        {
-            print("jump");
-            //rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            rb.AddForce(new Vector2(0, jumpForce * 10));
-            
-            //rb.AddForce(Vector2.up * jumpForce);
-            //rb.AddForce(new Vector2(0, 10), ForceMode2D.Impulse);
-        }
+        if (col.tag == "ground") is_ground = true;
+    }
+    void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.tag == "ground") is_ground = false;
     }
 
 }

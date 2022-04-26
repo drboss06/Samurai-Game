@@ -271,7 +271,6 @@ GameObject:
   - component: {fileID: 215310831}
   - component: {fileID: 215310830}
   - component: {fileID: 215310828}
-  - component: {fileID: 215310832}
   - component: {fileID: 215310827}
   - component: {fileID: 215310826}
   - component: {fileID: 215310829}
@@ -370,7 +369,7 @@ MonoBehaviour:
   speed: 5
   anim: {fileID: 215310827}
   sr: {fileID: 215310826}
-  jumpForce: 700
+  jumpForce: 150
   is_ground: 1
 --- !u!61 &215310829
 BoxCollider2D:
@@ -427,27 +426,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 215310825}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.85, y: 1.23, z: 1}
+  m_LocalPosition: {x: -0.75, y: 1.74, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &215310832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 215310825}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 755d48eb01ee2094ca7ee7df3ec5c5b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  is_ground: 1
-  rb: {fileID: 0}
-  force: 900
 --- !u!61 &215310833
 BoxCollider2D:
   m_ObjectHideFlags: 0
