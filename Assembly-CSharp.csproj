@@ -36,8 +36,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Move.cs" />
-     <Compile Include="Assets\Scripts\Jump.cs" />
+     <Compile Include="Assets\Scripts\DeathTuch.cs" />
+     <Compile Include="Assets\Scripts\Hero.cs" />
      <None Include="Assets\Player\Hero\License.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.31f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
