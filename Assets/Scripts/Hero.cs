@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hero : MonoBehaviour
+public class Hero : Entity
 {
     public static Hero Instance {get; set;}
     public Rigidbody2D rb;
