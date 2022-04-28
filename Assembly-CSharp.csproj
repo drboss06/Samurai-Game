@@ -36,13 +36,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\MenuControl.cs" />
+     <Compile Include="Assets\Scripts\EnemyControl.cs" />
      <Compile Include="Assets\Scripts\Hero.cs" />
+     <Compile Include="Assets\Brackeys\Enemy Galore 1 - Pixel Art\Script\EnemyTest.cs" />
      <Compile Include="Assets\Scripts\StaticEnemy.cs" />
      <Compile Include="Assets\Scripts\DeathTuch.cs" />
      <Compile Include="Assets\Scripts\Entity.cs" />
      <Compile Include="Assets\Scripts\HPEnemy.cs" />
-     <Compile Include="Assets\Brackeys\Enemy Galore 1 - Pixel Art\Script\EnemyTest.cs" />
-     <Compile Include="Assets\Scripts\MenuControl.cs" />
+     <Compile Include="Assets\Scripts\CameraControl.cs" />
      <None Include="Assets\Brackeys\Enemy Galore 1 - Pixel Art\Read Me.txt" />
      <None Include="Assets\Player\Hero\License.txt" />
     <Reference Include="UnityEngine">

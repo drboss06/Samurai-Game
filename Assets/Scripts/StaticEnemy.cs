@@ -5,10 +5,10 @@ using UnityEngine;
 public class StaticEnemy : Entity
 {   
     public int Lives = 1;
-    public bool onMuve = true;
+    //public bool onMuve = true;
     public Rigidbody2D rb;
-    public Vector2 moveVector;
-    public float speed;
+    //public Vector2 moveVector;
+    //public float speed;
 
     void Start(){
         rb = GetComponent<Rigidbody2D>();
