@@ -10,9 +10,13 @@ public class Hero : Entity
     public float speed = 2f;
     public Animator anim;
     public SpriteRenderer sr;
+    public Transform punch1;
+    public int Lives = 1;
+    public float punch1Radius;
     public float jumpForce = 15f;
     public bool is_ground = true;
-    public int Lives = 1;
+
+    public LayerMask enemy;
     
     
     void Start()
@@ -30,6 +34,20 @@ public class Hero : Entity
         anim.SetBool("onGround", is_ground);
         if(Input.GetButtonDown("Jump") && is_ground){
             Jump();
+        }
+
+        if(Input.GetMouseButtonDown(0))
+        {   
+            //anim.SetBool("startHit", true);
+            anim.Play("AttakAnim");
+            Collider2D[] enemies = Physics2D.OverlapCircleAll(punch1.position, punch1Radius, enemy);
+
+            for (int i = 0; i < enemies.Length; i++){
+                enemies[i].GetComponent<StaticEnemy>().TakeDamage();
+                print(enemies);
+            }
+            //anim.SetBool("startHit", false);
+            print("punch");
         }
     }
     void Wolk()

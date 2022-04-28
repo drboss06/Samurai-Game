@@ -37,9 +37,13 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Hero.cs" />
+     <Compile Include="Assets\Scripts\StaticEnemy.cs" />
      <Compile Include="Assets\Scripts\DeathTuch.cs" />
      <Compile Include="Assets\Scripts\Entity.cs" />
-     <Compile Include="Assets\Scripts\StaticEnemy.cs" />
+     <Compile Include="Assets\Scripts\HPEnemy.cs" />
+     <Compile Include="Assets\Brackeys\Enemy Galore 1 - Pixel Art\Script\EnemyTest.cs" />
+     <Compile Include="Assets\Scripts\MenuControl.cs" />
+     <None Include="Assets\Brackeys\Enemy Galore 1 - Pixel Art\Read Me.txt" />
      <None Include="Assets\Player\Hero\License.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.31f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
