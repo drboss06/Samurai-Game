@@ -16,8 +16,6 @@ public class Hero : Entity
     public float jumpForce = 15f;
     public bool is_ground = true;
     public AudioSource audioSourseHero;
-    
-
     public AudioClip[] otherClips;
 
     public LayerMask enemy;
