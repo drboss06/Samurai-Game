@@ -15,6 +15,10 @@ public class Hero : Entity
     public float punch1Radius;
     public float jumpForce = 15f;
     public bool is_ground = true;
+    public AudioSource audioSourseHero;
+    
+
+    public AudioClip[] otherClips;
 
     public LayerMask enemy;
     
@@ -25,8 +29,9 @@ public class Hero : Entity
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
+        audioSourseHero = GetComponent<AudioSource>();
     }
-
+    
     void Update()
     {
         Wolk();
@@ -38,7 +43,9 @@ public class Hero : Entity
 
         if(Input.GetMouseButtonDown(0))
         {   
+            //audioSourseHero.Play();
             //anim.SetBool("startHit", true);
+            PlayRandomClipSword();
             anim.Play("AttakAnim");
             Collider2D[] enemies = Physics2D.OverlapCircleAll(punch1.position, punch1Radius, enemy);
 
@@ -47,7 +54,7 @@ public class Hero : Entity
                 print(enemies);
             }
             //anim.SetBool("startHit", false);
-            print("punch");
+            print("punch width Sound");
         }
     }
     void Wolk()
@@ -55,6 +62,12 @@ public class Hero : Entity
         moveVector.x = Input.GetAxis("Horizontal");
         anim.SetFloat("moveX", Mathf.Abs(moveVector.x));
         rb.velocity = new Vector2 (moveVector.x * speed, rb.velocity.y);
+    }
+
+    void PlayRandomClipSword(){
+        //if(audioSourseHero.isPlaying) return;
+        audioSourseHero.clip = otherClips[Random.Range(0, otherClips.Length - 1)];
+        audioSourseHero.Play();
     }
 
     void Jump()
