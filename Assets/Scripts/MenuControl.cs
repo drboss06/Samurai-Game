@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuControl : MonoBehaviour
 {
+    public bool isFullScreen;
     public void PlayPressed(){
         SceneManager.LoadScene("SampleScene");
     }
@@ -14,5 +15,11 @@ public class MenuControl : MonoBehaviour
     {
         Application.Quit();
         print("Exit Pressed");
+    }
+
+    public void FullScreenToggle()
+    {
+        isFullScreen = !isFullScreen;
+        Screen.fullScreen = isFullScreen;
     }
 }
