@@ -96,7 +96,10 @@ public class Hero : Entity
     public void GetDamage(int Damage)
     {
         Lives -= Damage;
-        print(Lives);
+        //print(Lives);
+        if(Lives <= 0){
+            Die();
+        }
     }
 
 }

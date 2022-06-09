@@ -39,6 +39,7 @@
      <Compile Include="Assets\Scripts\MenuControl.cs" />
      <Compile Include="Assets\Scripts\EnemyControl.cs" />
      <Compile Include="Assets\Scripts\Hero.cs" />
+     <Compile Include="Assets\Scripts\MenuChecker.cs" />
      <Compile Include="Assets\Scripts\CameraControl.cs" />
      <Compile Include="Assets\Brackeys\Enemy Galore 1 - Pixel Art\Script\EnemyTest.cs" />
      <Compile Include="Assets\Scripts\StaticEnemy.cs" />
@@ -48,7 +49,6 @@
      <Compile Include="Assets\Scripts\Settings.cs" />
      <Compile Include="Assets\Scripts\ChangeButton.cs" />
      <Compile Include="Assets\Scripts\HPEnemy.cs" />
-     <Compile Include="Assets\Scripts\MenuChecker.cs" />
      <None Include="Assets\Brackeys\Enemy Galore 1 - Pixel Art\Read Me.txt" />
      <None Include="Assets\Player\Hero\License.txt" />
     <Reference Include="UnityEngine">
@@ -272,6 +272,9 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.31f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+        <HintPath>C:\Users\Zeldini\Samurai Game\Assets\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.31f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -710,6 +713,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{dde0959d-d024-25ae-950f-eb78b5f0ad8b}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{58507ad1-9064-01b3-13ae-4267b60e66e4}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{393d8fcb-efed-0acd-58d5-d05866971b98}</Project>
+      <Name>PackageToolsEditor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
