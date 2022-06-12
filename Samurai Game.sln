@@ -1,27 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{e4621ba9-8b2a-30a9-5b08-9f91dc0321f6}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstarPathfindingProject", "AstarPathfindingProject.csproj", "{58507ad1-9064-01b3-13ae-4267b60e66e4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstarPathfindingProjectEditor", "AstarPathfindingProjectEditor.csproj", "{dde0959d-d024-25ae-950f-eb78b5f0ad8b}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{e4621ba9-8b2a-30a9-5b08-9f91dc0321f6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackageToolsEditor", "PackageToolsEditor.csproj", "{393d8fcb-efed-0acd-58d5-d05866971b98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstarPathfindingProjectEditor", "AstarPathfindingProjectEditor.csproj", "{dde0959d-d024-25ae-950f-eb78b5f0ad8b}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{e4621ba9-8b2a-30a9-5b08-9f91dc0321f6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{e4621ba9-8b2a-30a9-5b08-9f91dc0321f6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58507ad1-9064-01b3-13ae-4267b60e66e4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{58507ad1-9064-01b3-13ae-4267b60e66e4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{dde0959d-d024-25ae-950f-eb78b5f0ad8b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{dde0959d-d024-25ae-950f-eb78b5f0ad8b}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{e4621ba9-8b2a-30a9-5b08-9f91dc0321f6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{e4621ba9-8b2a-30a9-5b08-9f91dc0321f6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{393d8fcb-efed-0acd-58d5-d05866971b98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{393d8fcb-efed-0acd-58d5-d05866971b98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{dde0959d-d024-25ae-950f-eb78b5f0ad8b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{dde0959d-d024-25ae-950f-eb78b5f0ad8b}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

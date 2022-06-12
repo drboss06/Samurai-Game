@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\Settings.cs" />
      <Compile Include="Assets\Scripts\ChangeButton.cs" />
      <Compile Include="Assets\Scripts\HPEnemy.cs" />
+     <Compile Include="Assets\Scripts\GhostPlatform.cs" />
      <None Include="Assets\Brackeys\Enemy Galore 1 - Pixel Art\Read Me.txt" />
      <None Include="Assets\Player\Hero\License.txt" />
     <Reference Include="UnityEngine">
@@ -713,17 +714,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
-      <Project>{dde0959d-d024-25ae-950f-eb78b5f0ad8b}</Project>
-      <Name>AstarPathfindingProjectEditor</Name>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{393d8fcb-efed-0acd-58d5-d05866971b98}</Project>
+      <Name>PackageToolsEditor</Name>
     </ProjectReference>
     <ProjectReference Include="AstarPathfindingProject.csproj">
       <Project>{58507ad1-9064-01b3-13ae-4267b60e66e4}</Project>
       <Name>AstarPathfindingProject</Name>
     </ProjectReference>
-    <ProjectReference Include="PackageToolsEditor.csproj">
-      <Project>{393d8fcb-efed-0acd-58d5-d05866971b98}</Project>
-      <Name>PackageToolsEditor</Name>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{dde0959d-d024-25ae-950f-eb78b5f0ad8b}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -97,9 +97,9 @@ public class Hero : Entity
     {
         Lives -= Damage;
         print(Lives);
-        if(Lives <= 0){
-            Die();
-        }
+        // if(Lives <= 0){
+        //     Die();
+        // }
     }
 
 }
