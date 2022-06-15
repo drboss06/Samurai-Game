@@ -9,4 +9,9 @@ public class Settings : MonoBehaviour
         isFullScreen = !isFullScreen;
         Screen.fullScreen = isFullScreen;
     }
+    
+    public void Quality(int q)
+    {
+        QualitySettings.SetQualityLevel(q);
+    }
 }

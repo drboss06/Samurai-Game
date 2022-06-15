@@ -48,8 +48,9 @@
      <Compile Include="Assets\Scripts\MenuSoundPlayer.cs" />
      <Compile Include="Assets\Scripts\Settings.cs" />
      <Compile Include="Assets\Scripts\ChangeButton.cs" />
-     <Compile Include="Assets\Scripts\HPEnemy.cs" />
      <Compile Include="Assets\Scripts\GhostPlatform.cs" />
+     <Compile Include="Assets\Scripts\HPEnemy.cs" />
+     <Compile Include="Assets\Scripts\ExitFromTheGame.cs" />
      <None Include="Assets\Brackeys\Enemy Galore 1 - Pixel Art\Read Me.txt" />
      <None Include="Assets\Player\Hero\License.txt" />
     <Reference Include="UnityEngine">
