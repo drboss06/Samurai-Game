@@ -24,6 +24,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1780,6 +1781,87 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      mainlevbuild_68: -8823722090654254923
+      mainlevbuild_76: -5665889735847176292
+      mainlevbuild_34: 8738420372347068404
+      mainlevbuild_53: 4256329747719841554
+      mainlevbuild_71: -3905130606289811855
+      mainlevbuild_20: -6594178671280562777
+      mainlevbuild_1: -5727760111797192145
+      mainlevbuild_23: -9115494449990103297
+      mainlevbuild_12: -5629698620501372720
+      mainlevbuild_41: -4585072949944894917
+      mainlevbuild_11: 4862577987027710429
+      mainlevbuild_65: 4198835716397797896
+      mainlevbuild_0: -418600334569417129
+      mainlevbuild_33: -235880382000146013
+      mainlevbuild_72: -5052328825410608781
+      mainlevbuild_5: -7498149340825567013
+      mainlevbuild_24: 6420727695496351146
+      mainlevbuild_43: 1453184701218036082
+      mainlevbuild_74: 3044398042023039788
+      mainlevbuild_44: 6862000540387573597
+      mainlevbuild_15: 8663717305663940273
+      mainlevbuild_27: -1941847486174947609
+      mainlevbuild_19: -4697650317462834917
+      mainlevbuild_48: -4619280345969563776
+      mainlevbuild_30: 8768440425142752653
+      mainlevbuild_49: 1255356085234128013
+      mainlevbuild_73: 7528192680436873960
+      mainlevbuild_56: 4778794286218837914
+      mainlevbuild_75: -5859953615625687969
+      mainlevbuild_67: 7097634703160681251
+      mainlevbuild_2: 4011826581710594722
+      mainlevbuild_63: -6620768258802225657
+      mainlevbuild_35: -1738952003001450570
+      mainlevbuild_62: -2188923288898987827
+      mainlevbuild_58: 1569051132913048003
+      mainlevbuild_50: -758095170122577706
+      mainlevbuild_79: -5972382954435024299
+      mainlevbuild_59: -2180457891328654851
+      mainlevbuild_66: 2832461173733039115
+      mainlevbuild_37: -6847793319153235135
+      mainlevbuild_28: -2824339273499651401
+      mainlevbuild_17: -2252579517654919330
+      mainlevbuild_26: 3689678004797401271
+      mainlevbuild_45: 8022921440793764292
+      mainlevbuild_54: 8353016380883712464
+      mainlevbuild_78: 7108238209999571957
+      mainlevbuild_55: -5947681416826634311
+      mainlevbuild_3: -2921649638176895635
+      mainlevbuild_8: -3679733267116199293
+      mainlevbuild_64: -4869326712624427044
+      mainlevbuild_40: -5580178051479784154
+      mainlevbuild_22: -3248334058349396385
+      mainlevbuild_25: -1602463451461582043
+      mainlevbuild_42: -5820360885964414978
+      mainlevbuild_18: 6226702988855111956
+      mainlevbuild_38: -1703218779116828949
+      mainlevbuild_47: -291526051471725722
+      mainlevbuild_70: 2872770103191652374
+      mainlevbuild_29: -8429205204603446322
+      mainlevbuild_7: 4262012770324947943
+      mainlevbuild_21: -898266508491088363
+      mainlevbuild_32: 7709999835353539182
+      mainlevbuild_77: 4436442633588373683
+      mainlevbuild_13: -8026734006290447909
+      mainlevbuild_6: 4188783655783027223
+      mainlevbuild_46: 2355887969100071470
+      mainlevbuild_36: -508832943575404403
+      mainlevbuild_14: 9052083678068739164
+      mainlevbuild_39: -6978136671512635147
+      mainlevbuild_10: 7849981455521004453
+      mainlevbuild_4: -5296460117389895971
+      mainlevbuild_60: -6871419746954505778
+      mainlevbuild_31: 4408563769535370717
+      mainlevbuild_16: -2593568489711789508
+      mainlevbuild_9: 7759064944903599796
+      mainlevbuild_69: 5981800252108750602
+      mainlevbuild_51: -2325699701033483723
+      mainlevbuild_52: -4031146520388835426
+      mainlevbuild_61: 1342668001968994181
+      mainlevbuild_57: 742475946954001709
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

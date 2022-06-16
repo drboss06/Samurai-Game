@@ -36,6 +36,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -232,6 +233,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Bones_SingleSkull_Hit_3: 4823759084339969249
+      Bones_SingleSkull_Hit_1: -8113372621299409273
+      Bones_SingleSkull_Hit_0: 8378356175859037722
+      Bones_SingleSkull_Hit_2: 2785621471707589009
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

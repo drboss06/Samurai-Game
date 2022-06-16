@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class StaticEnemy : Entity
 {   
+    public string name;
     public int Lives = 1;
     //public bool onMuve = true;
     public Rigidbody2D rb;

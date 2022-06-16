@@ -57,6 +57,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -400,6 +401,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Golem_Armor_Ability_6: -8794290732113877774
+      Golem_Armor_Ability_1: -3487011003072021407
+      Golem_Armor_Ability_10: 2091495657284362832
+      Golem_Armor_Ability_7: -8207494022414964678
+      Golem_Armor_Ability_2: -3425926272032877201
+      Golem_Armor_Ability_3: 4371205819980733466
+      Golem_Armor_Ability_5: -4013674119437697815
+      Golem_Armor_Ability_8: -6314165333206424457
+      Golem_Armor_Ability_9: 1434869215068839185
+      Golem_Armor_Ability_4: -7678252057889715739
+      Golem_Armor_Ability_0: 4517011205545875929
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

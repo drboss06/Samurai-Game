@@ -36,6 +36,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -232,6 +233,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Bones_SingleSkull_Idle_0: -9010615838638220262
+      Bones_SingleSkull_Idle_3: -563720018158609983
+      Bones_SingleSkull_Idle_1: -4394603861343308038
+      Bones_SingleSkull_Idle_2: -3461715707767117153
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

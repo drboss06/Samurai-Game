@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Hero : Entity
 {
+    [SerializeField] private LivingTime timer;
+    [SerializeField] private KillsCounter killsCounter;
     public static Hero Instance {get; set;}
     public Rigidbody2D rb;
     public Vector2 moveVector;
@@ -49,6 +51,7 @@ public class Hero : Entity
 
             for (int i = 0; i < enemies.Length; i++){
                 enemies[i].GetComponent<StaticEnemy>().TakeDamage();
+                killsCounter.numberOfKills++;
                 print(enemies);
             }
             //anim.SetBool("startHit", false);
@@ -95,7 +98,8 @@ public class Hero : Entity
 
     public void GetDamage(int Damage)
     {
-        Lives -= Damage;
+        Lives -= Damage;  
+        timer.time = 0.0f;      
         print(Lives);
         // if(Lives <= 0){
         //     Die();
