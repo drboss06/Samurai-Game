@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637909552442930967
+      ticks: 637909617623703719
     m_Hash: 3122938363
   m_LockFileStatus:
     m_FilePath: C:/Users/Clyde/Documents/GitHub/Samurai-Game/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637909552442940953
+      ticks: 637909617623703719
     m_Hash: 647149173
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}

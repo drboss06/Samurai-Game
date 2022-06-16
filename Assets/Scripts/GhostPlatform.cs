@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class GhostPlatform : MonoBehaviour
 {
-    public Collider2D col;
+    public CompositeCollider2D col;
     public GameObject player;
     void Start()
     {
-        col = GetComponent<Collider2D>();
+        col = GetComponent<CompositeCollider2D>();
     }
 
     

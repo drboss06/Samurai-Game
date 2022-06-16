@@ -4,25 +4,20 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Coin
   - ground
   - Enemy
-  - Coin
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemy
   - Water
   - UI
-  - Enemy
-  - Player
-<<<<<<< HEAD
-  - Ground
-  - GhostGround
-=======
-  - Spikes
-  - Coins
->>>>>>> origin/Yuuki
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -48,7 +43,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Back
-    uniqueID: 1045643209
     locked: 0

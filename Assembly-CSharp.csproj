@@ -59,6 +59,7 @@
     <Compile Include="Assets\Scripts\MenuControl.cs" />
     <Compile Include="Assets\Scripts\EnemyControl.cs" />
     <Compile Include="Assets\Scripts\Hero.cs" />
+    <Compile Include="Assets\Scripts\MenuChecker.cs" />
     <Compile Include="Assets\Scripts\CameraControl.cs" />
     <Compile Include="Assets\DeathPlatform.cs" />
     <Compile Include="Assets\Brackeys\Enemy Galore 1 - Pixel Art\Script\EnemyTest.cs" />
@@ -67,6 +68,11 @@
     <Compile Include="Assets\Scripts\DeathZone.cs" />
     <Compile Include="Assets\Scripts\DeathTuch.cs" />
     <Compile Include="Assets\Scripts\Entity.cs" />
+    <Compile Include="Assets\Scripts\ExitFromTheGame.cs" />
+    <Compile Include="Assets\Scripts\MenuSoundPlayer.cs" />
+    <Compile Include="Assets\Scripts\Settings.cs" />
+    <Compile Include="Assets\Scripts\ChangeButton.cs" />
+    <Compile Include="Assets\Scripts\GhostPlatform.cs" />
     <Compile Include="Assets\Scripts\HPEnemy.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -76,26 +82,6 @@
     <None Include="Assets\Player\Hero\License.txt" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-     <Compile Include="Assets\Scripts\MenuControl.cs" />
-     <Compile Include="Assets\Scripts\EnemyControl.cs" />
-     <Compile Include="Assets\Scripts\Hero.cs" />
-     <Compile Include="Assets\Scripts\MenuChecker.cs" />
-     <Compile Include="Assets\Scripts\CameraControl.cs" />
-     <Compile Include="Assets\Brackeys\Enemy Galore 1 - Pixel Art\Script\EnemyTest.cs" />
-     <Compile Include="Assets\Scripts\StaticEnemy.cs" />
-     <Compile Include="Assets\Scripts\DeathTuch.cs" />
-     <Compile Include="Assets\Scripts\Entity.cs" />
-     <Compile Include="Assets\Scripts\MenuSoundPlayer.cs" />
-     <Compile Include="Assets\Scripts\Settings.cs" />
-     <Compile Include="Assets\Scripts\ChangeButton.cs" />
-     <Compile Include="Assets\Scripts\GhostPlatform.cs" />
-     <Compile Include="Assets\Scripts\HPEnemy.cs" />
-     <Compile Include="Assets\Scripts\ExitFromTheGame.cs" />
-     <None Include="Assets\Brackeys\Enemy Galore 1 - Pixel Art\Read Me.txt" />
-     <None Include="Assets\Player\Hero\License.txt" />
-=======
->>>>>>> origin/Yuuki
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.33f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -319,7 +305,7 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.33f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="Pathfinding.Ionic.Zip.Reduced">
-        <HintPath>C:\Users\Zeldini\Samurai Game\Assets\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+      <HintPath>Assets\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.33f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -765,15 +751,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="PackageToolsEditor.csproj">
-      <Project>{393d8fcb-efed-0acd-58d5-d05866971b98}</Project>
+      <Project>{54F773ED-6B12-2148-02E3-D441D3C2C971}</Project>
       <Name>PackageToolsEditor</Name>
     </ProjectReference>
     <ProjectReference Include="AstarPathfindingProject.csproj">
-      <Project>{58507ad1-9064-01b3-13ae-4267b60e66e4}</Project>
+      <Project>{B85DBB4B-4ED6-9E87-1872-6112FB0D1B3B}</Project>
       <Name>AstarPathfindingProject</Name>
     </ProjectReference>
     <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
-      <Project>{dde0959d-d024-25ae-950f-eb78b5f0ad8b}</Project>
+      <Project>{1D76B321-C302-0BCE-EF9C-B6EAD27A9545}</Project>
       <Name>AstarPathfindingProjectEditor</Name>
     </ProjectReference>
   </ItemGroup>

@@ -1,7 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstarPathfindingProject", "AstarPathfindingProject.csproj", "{58507AD1-9064-01B3-13AE-4267B60E66E4}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{10E05440-A6EC-4959-54C7-704E7F867252}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackageToolsEditor", "PackageToolsEditor.csproj", "{393D8FCB-EFED-0ACD-58D5-D05866971B98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstarPathfindingProjectEditor", "AstarPathfindingProjectEditor.csproj", "{DDE0959D-D024-25AE-950F-EB78B5F0AD8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,12 +17,27 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58507AD1-9064-01B3-13AE-4267B60E66E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58507AD1-9064-01B3-13AE-4267B60E66E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58507AD1-9064-01B3-13AE-4267B60E66E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58507AD1-9064-01B3-13AE-4267B60E66E4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{10E05440-A6EC-4959-54C7-704E7F867252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{10E05440-A6EC-4959-54C7-704E7F867252}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10E05440-A6EC-4959-54C7-704E7F867252}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10E05440-A6EC-4959-54C7-704E7F867252}.Release|Any CPU.Build.0 = Release|Any CPU
+		{393D8FCB-EFED-0ACD-58D5-D05866971B98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{393D8FCB-EFED-0ACD-58D5-D05866971B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{393D8FCB-EFED-0ACD-58D5-D05866971B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{393D8FCB-EFED-0ACD-58D5-D05866971B98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDE0959D-D024-25AE-950F-EB78B5F0AD8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE0959D-D024-25AE-950F-EB78B5F0AD8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE0959D-D024-25AE-950F-EB78B5F0AD8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDE0959D-D024-25AE-950F-EB78B5F0AD8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC921FBE-CB71-43C6-A64F-61B5D2FEB695}
 	EndGlobalSection
 EndGlobal
