@@ -42,6 +42,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -280,6 +281,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Slime_Spiked_Death_5: 352125740349179034
+      Slime_Spiked_Death_2: -6865569292106185554
+      Slime_Spiked_Death_0: -7403321913631695209
+      Slime_Spiked_Death_3: -5301956442226094466
+      Slime_Spiked_Death_1: -7094428357162499472
+      Slime_Spiked_Death_4: 1492179977762778702
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

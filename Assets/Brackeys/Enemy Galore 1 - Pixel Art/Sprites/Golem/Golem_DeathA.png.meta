@@ -51,6 +51,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -352,6 +353,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Golem_DeathA_8: 7429024813292269697
+      Golem_DeathA_6: -1959914090961040170
+      Golem_DeathA_5: -2697951598644830015
+      Golem_DeathA_2: 358624408652620325
+      Golem_DeathA_0: -2208575386617526276
+      Golem_DeathA_3: -6960492609824681224
+      Golem_DeathA_1: 1720141246944928757
+      Golem_DeathA_7: 1666243299255332216
+      Golem_DeathA_4: 4913858366276946530
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

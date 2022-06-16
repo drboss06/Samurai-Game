@@ -39,6 +39,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -256,6 +257,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Golem_AttackA_FX_3: -4315502537467429462
+      Golem_AttackA_FX_4: 389500134104046418
+      Golem_AttackA_FX_1: -8945436382363876492
+      Golem_AttackA_FX_0: 8036876663067323500
+      Golem_AttackA_FX_2: 2954060893321911702
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

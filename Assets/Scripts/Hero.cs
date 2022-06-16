@@ -1,20 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Hero : Entity
 {
+    [SerializeField] private LivingTime timer;
+    [SerializeField] private KillsCounter killsCounter;
+    [SerializeField] private CoinCounter coinCounter;
     public static Hero Instance {get; set;}
-    public Rigidbody2D rb;
-    public Vector2 moveVector;
-    public float speed = 2f;
+    public Rigidbody2D rb;    
+    [HideInInspector] public Vector2 moveVector;
+    [HideInInspector] public float speed = 2f;
     public Animator anim;
     public SpriteRenderer sr;
-    public Transform punch1;
-    public int Lives = 1;
-    public float punch1Radius;
-    public float jumpForce = 15f;
-    public bool is_ground = true;
+    [HideInInspector] public Transform punch1;
+    [HideInInspector] public int Lives = 1;
+    [HideInInspector] public float punch1Radius;
+    [HideInInspector] public float jumpForce = 15f;
+    [HideInInspector] public bool is_ground = true;
     public AudioSource audioSourseHero;
     public AudioClip[] otherClips;
 
@@ -23,6 +27,7 @@ public class Hero : Entity
     
     void Start()
     {
+        timer  = new LivingTime();
         Instance = this;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -47,8 +52,10 @@ public class Hero : Entity
             anim.Play("AttakAnim");
             Collider2D[] enemies = Physics2D.OverlapCircleAll(punch1.position, punch1Radius, enemy);
 
-            for (int i = 0; i < enemies.Length; i++){
+            for (int i = 0; i < enemies.Length; i++)
+            {
                 enemies[i].GetComponent<StaticEnemy>().TakeDamage();
+                killsCounter.numberOfKills++;
                 print(enemies);
             }
             //anim.SetBool("startHit", false);
@@ -97,6 +104,7 @@ public class Hero : Entity
     {
         Lives -= Damage;
         print(Lives);
+        timer.time = 0.0f;
         // if(Lives <= 0){
         //     Die();
         // }

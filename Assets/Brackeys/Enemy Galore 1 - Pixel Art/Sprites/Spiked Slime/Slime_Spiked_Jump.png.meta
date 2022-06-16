@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -328,6 +329,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Slime_Spiked_Jump_7: -3939340846533709606
+      Slime_Spiked_Jump_5: -1361301236401281588
+      Slime_Spiked_Jump_6: -6044705316452280752
+      Slime_Spiked_Jump_0: -1641798918562053417
+      Slime_Spiked_Jump_4: 2442125793583260075
+      Slime_Spiked_Jump_2: -441737706056035698
+      Slime_Spiked_Jump_3: 640027358729759804
+      Slime_Spiked_Jump_1: 3159627358990428927
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

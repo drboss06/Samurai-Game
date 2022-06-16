@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -328,6 +329,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Rat_Attack_6: -3038192285825470256
+      Rat_Attack_5: -3092952472455665484
+      Rat_Attack_3: -8734225929422637144
+      Rat_Attack_2: 237780741983019432
+      Rat_Attack_4: -8856388896005021851
+      Rat_Attack_0: -284388638163825642
+      Rat_Attack_1: -671448322994471273
+      Rat_Attack_7: 4751188050038841178
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

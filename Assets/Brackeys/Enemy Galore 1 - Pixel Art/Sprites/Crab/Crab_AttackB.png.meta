@@ -42,6 +42,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -280,6 +281,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Crab_AttackB_0: 603711078607427004
+      Crab_AttackB_1: -2051181218222260553
+      Crab_AttackB_5: -7997341577371622514
+      Crab_AttackB_3: -7908002518318666059
+      Crab_AttackB_4: 4123187564353717086
+      Crab_AttackB_2: -1804679012313508583
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
