@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Hero : Entity
 {
@@ -17,6 +18,8 @@ public class Hero : Entity
     public bool is_ground = true;
     public AudioSource audioSourseHero;
     public AudioClip[] otherClips;
+    public LivingTime timer;
+    public KillsCounter kills;
 
     public LayerMask enemy;
     
@@ -28,6 +31,7 @@ public class Hero : Entity
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         audioSourseHero = GetComponent<AudioSource>();
+        timer.time = PlayerPrefs.GetFloat("time");
     }
     
     void Update()
@@ -37,6 +41,12 @@ public class Hero : Entity
         anim.SetBool("onGround", is_ground);
         if(Input.GetButtonDown("Jump") && is_ground){
             Jump();
+        }
+
+        if (Input.GetButtonDown("Cancel"))
+        {
+            PlayerPrefs.SetFloat("time", 0);
+            SceneManager.LoadScene(0);
         }
 
         if(Input.GetMouseButtonDown(0))
@@ -50,6 +60,7 @@ public class Hero : Entity
             for (int i = 0; i < enemies.Length; i++){
                 enemies[i].GetComponent<StaticEnemy>().TakeDamage();
                 print(enemies);
+                kills.numberOfKills++;
             }
             //anim.SetBool("startHit", false);
             print("punch width Sound");
@@ -64,7 +75,7 @@ public class Hero : Entity
 
     void PlayRandomClipSword(){
         //if(audioSourseHero.isPlaying) return;
-        audioSourseHero.clip = otherClips[Random.Range(0, otherClips.Length - 1)];
+        audioSourseHero.clip = otherClips[Random.Range(1, otherClips.Length) - 1];
         audioSourseHero.Play();
     }
 
@@ -97,9 +108,12 @@ public class Hero : Entity
     {
         Lives -= Damage;
         print(Lives);
-        // if(Lives <= 0){
-        //     Die();
-        // }
+        if(Lives <= 0)
+        {
+            PlayerPrefs.SetFloat("time", timer.time);
+            Die();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
 }

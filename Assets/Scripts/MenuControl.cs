@@ -7,7 +7,7 @@ public class MenuControl : MonoBehaviour
 {
     public bool isFullScreen;
     public void PlayPressed(){
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(1);
     }
 
 

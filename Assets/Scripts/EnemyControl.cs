@@ -6,12 +6,15 @@ public class EnemyControl : MonoBehaviour
 {
     public Rigidbody2D rbPhisic;
     public Transform player;
-    public float distanceToPlayer;
+    private float distanceToPlayer;
     public float speed;
     public float distanceToAgro;
+    public Animator anim;
+    public SpriteRenderer sr;
     void Start()
     {
         rbPhisic = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -24,6 +27,15 @@ public class EnemyControl : MonoBehaviour
             StopHuntToPlayer();
             StaticMove();
         }
+
+        if (rbPhisic.velocity.x > 0)
+        {
+            sr.flipX = true;
+        }
+        else
+        {
+            sr.flipX = false;
+        }
     }
 
     void HuntToPlayer()
@@ -31,9 +43,12 @@ public class EnemyControl : MonoBehaviour
         if(player.position.x < transform.position.x)
         {
             rbPhisic.velocity = new Vector2(speed * -1, 0);
-        }else if (player.position.x > transform.position.x)
+            anim.SetFloat("EnemyMoveX", Mathf.Abs(rbPhisic.velocity.x));
+        }
+        else if (player.position.x > transform.position.x)
         {
             rbPhisic.velocity = new Vector2(speed, 0);
+            anim.SetFloat("EnemyMoveX", Mathf.Abs(rbPhisic.velocity.x));
         }
     }
 

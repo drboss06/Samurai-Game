@@ -10,7 +10,12 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Прочие файлы",
       "ColorIndex": -1
+    },
+    "58507ad1-9064-01b3-13ae-4267b60e66e4": {
+      "ProjectGuid": "58507ad1-9064-01b3-13ae-4267b60e66e4",
+      "DisplayName": "AstarPathfindingProject",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }

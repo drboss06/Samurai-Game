@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 2815264617202970065}
   - component: {fileID: 2815264617202970066}
   - component: {fileID: 2815264617202970077}
+  - component: {fileID: 1759042846197348948}
   m_Layer: 6
   m_Name: Flying Monster
   m_TagString: Enemy
@@ -264,3 +265,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Lives: 1
   rb: {fileID: 2815264617202970076}
+--- !u!210 &1759042846197348948
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2815264617202970070}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
